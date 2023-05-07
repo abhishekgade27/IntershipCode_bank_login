@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style>
+    body {
+        background-image: url('@Url.Content("~/Content/login.jpg")');
+        background-size: cover;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="card" style="background-color: transparent;border-color:transparent">
+                    <div class="card-body">
+                        <h4 class="card-title mb-4" style="color:red">Login</h4>
+                        <form id="login-form" method="post" action="@Url.Action("Login")">
+                            <div class="form-group">
+                                <label for="username" style="color:red"><b>Username*</b></label>
+                                <input type="text" class="form-control" id="username" name="username" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid username.
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" style="color:red"><b>Password*</b></label>
+                                <input type="password" class="form-control" id="password" name="password" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid password.
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success btn-block">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-9wkN8+0vKz3UNOv/Q0HVR4r0BzO6D7exSfb5Wd6q/63I6u+3Y+56jDEgCqxrQjffr0HJiR+0GTH+KUtt+fSxXQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    
+</body>
+</html>

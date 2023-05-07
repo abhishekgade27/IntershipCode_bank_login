@@ -1,0 +1,122 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>My Website</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            background-color: #007bff;
+            padding: 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 1.5;
+        }
+
+        .img-container {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body style="background-color:cyan">
+    <nav class="navbar navbar-expand-lg bg-body-dark sticky-top" style="background-color:black">
+        <div class="container-fluid pt-1 pb-1">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="@Url.Action("Index")" role="button" aria-expanded="false">
+                            HOME
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Product
+                        </a>
+                        <ul class="dropdown-menu nav-background">
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal">Saving Account</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal">Primium Saving Account</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal">Salary Account</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal">Student Account</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal">Minior Account</a>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#myModal">Current Account</a>
+
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Account
+                        </a>
+                        <ul class="dropdown-menu" id="settings">
+                            <li><a class="dropdown-item" id="hoverdrop" href="@Url.Action("LoginPage")">Sign In</a></li>
+                            <li><a class="dropdown-item" id="hoverdrop" href="@Url.Action("SignUpPage")">Sign Up</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <header class="header">
+        <h1>Welcome to Amrutvahini Bank of India</h1>
+        <p>Your Trusted Banking Partner</p>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 img-container">
+                <img src="~/Content/Bank-Finance.jpg" alt="Banking Services">
+                <p>We offer a wide range of banking services to meet all your financial needs.</p>
+            </div>
+            <div class="col-md-6 img-container">
+                <img src="~/Content/images (4).jpg" alt="Online Banking">
+                <p>Access your accounts 24/7 with our secure online banking system.</p>
+            </div>
+            <div class="col-md-6 img-container">
+                <img src="~/Content/images (2).jpg" alt="Personal Loans">
+                <p>Need funds for a big purchase or project? We offer personal loans with competitive rates.</p>
+            </div>
+            <div class="col-md-6 img-container">
+                <img src="~/Content/images (3).jpg" alt="Investment Services">
+                <p>Grow your wealth with our investment services, including stocks, bonds, and more.</p>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+</body>
+</html>
